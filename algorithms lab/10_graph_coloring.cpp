@@ -48,7 +48,6 @@ bool graphColoringUtil(bool graph[V][V], int m, int color[], int v)
     return false;
 }
 
-// Function to solve the m Coloring problem using backtracking
 bool graphColoring(bool graph[V][V], int m)
 {
     // Initialize all color values as 0. This initialization is needed to handle the case when no colors are assigned to any vertex
@@ -61,19 +60,12 @@ bool graphColoring(bool graph[V][V], int m)
         return false;
     }
 
-    // Print the solution
     printSolution(color);
     return true;
 }
 
 int main()
 {
-    // Create the following graph and test it
-    // (3)---(2)
-    //  |   / |
-    //  |  /  |
-    //  | /   |
-    // (0)---(1)
     bool graph[V][V] = {{0, 1, 1, 1},
                         {1, 0, 1, 0},
                         {1, 1, 0, 1},
